@@ -1,0 +1,1 @@
+This file should contain solutions and workarounds for common issues that users may encounter while using the project.

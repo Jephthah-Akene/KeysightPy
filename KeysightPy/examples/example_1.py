@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 from src.keysight_daq import KeysightDevice
 from src.utils import save_data_to_file
@@ -24,9 +23,3 @@ daq.disconnect()
 
 print("Single-point data acquisition completed and data saved to 'data/single_point_data.txt'")
 
-
-=======
-### These files should contain example scripts demonstrating how to use the project for specific tasks or with different
-# types of Keysight DAQ devices. The examples should be well-commented to help users understand how to modify them for 
-# their own needs.
->>>>>>> 92976d4be0337bb4c4a27b9b3aabfd6cfd4e94be

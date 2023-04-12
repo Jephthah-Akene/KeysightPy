@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-This file should contain a step-by-step guide for users to set up and use the project, including examples of common tasks and explanations of how to modify the source code for their specific requirements.
-
->>>>>>> 92976d4be0337bb4c4a27b9b3aabfd6cfd4e94be
 # KeysightPy User Guide
 
 This user guide provides step-by-step instructions for setting up and using the KeysightPy project to acquire data from Keysight Technologies data acquisition (DAQ) devices using Python and PyVISA.
@@ -13,14 +8,11 @@ This user guide provides step-by-step instructions for setting up and using the 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Connecting to Your DAQ Device](#connecting-to-your-daq-device)
-<<<<<<< HEAD
   - [Configuring Your DAQ Device](#configuring-your-daq-device)
   - [Acquiring Data](#acquiring-data)
   - [Saving and Loading Data](#saving-and-loading-data)
   - [Customizing the Project](#customizing-the-project)
   - [Running Tests](#running-tests)
-=======
->>>>>>> 92976d4be0337bb4c4a27b9b3aabfd6cfd4e94be
 
 ## Prerequisites
 
@@ -41,7 +33,6 @@ Follow the installation instructions provided in the [README.md](../README.md) f
 
 ```python
 resource_name = 'TCPIP0::192.168.0.100::inst0::INSTR'  # Replace with your device's resource name
-<<<<<<< HEAD
 ```
 Run the example_usage function to connect to your DAQ device. The KeysightDevice class will establish a connection using PyVISA.
 
@@ -59,5 +50,4 @@ Explain how users can customize the project for their specific requirements by m
 
 ## Running Tests
 Explain how to run the tests provided in the tests folder using the pytest testing framework. Include instructions for installing the required dependencies and running the tests from the command line.
-=======
->>>>>>> 92976d4be0337bb4c4a27b9b3aabfd6cfd4e94be
+

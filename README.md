@@ -6,14 +6,14 @@ KeysightPy is a Python library designed to simplify data acquisition with Keysig
 For questions or feature requests, please contact **Jephthah Akene** at 0xtachi@gmail.com. As an independent researcher, I built this project purely for the joy of creating something both enjoyable and practical. If you love to tinker and build innovative control systems, feel free to email me!
 
 ## Table of Contents
-- Installation
-- Usage
-- Examples
-- Simulation
-- Testing
-- Customization
-- File Structure
-- Dependencies
+- [Installation](#installation)
+- [Usage](#usage)
+- [Examples](#examples)
+- [Simulation](#simulation)
+- [Testing](#testing)
+- [Customization](#customization)
+- [File Structure](#file-structure)
+- [Dependencies](#dependencies)
 
 ## Installation
 To install KeysightPy, follow these steps:

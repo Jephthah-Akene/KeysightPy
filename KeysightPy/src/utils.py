@@ -1,3 +1,5 @@
+import numpy as np
+
 def save_data_to_file(data, file_path):
     """
     Save acquired data to a file.
@@ -23,3 +25,19 @@ def load_data_from_file(file_path):
     return data
 
 # Add more utility functions as needed for your project.
+
+def moving_average(data, window_size):
+    """
+    Smooth the input data using a moving average filter.
+
+    Args:
+        data (list or numpy array): The input data to be smoothed.
+        window_size (int): The size of the moving average window.
+
+    Returns:
+        numpy array: The smoothed data.
+    """
+    if window_size <= 0:
+        raise ValueError("Window size must be greater than 0")
+
+    return np.convolve(data, np.ones(window_size)/window_size, mode='same')

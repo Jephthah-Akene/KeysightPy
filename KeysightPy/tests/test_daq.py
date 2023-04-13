@@ -1,18 +1,24 @@
-### This file should contain test functions for the data acquisition functionality implemented in src/keysight_daq.py.
-# You can use a testing framework like pytest or unittest to write and run your tests.
-
-import pytest
+import unittest
 from src.keysight_daq import KeysightDevice
 
-def test_connection():
-    resource_name = 'TCPIP0::192.168.0.100::inst0::INSTR'  # Replace with the appropriate resource name for your device
-    daq = KeysightDevice(resource_name)
-    daq.connect()
+class TestKeysightDevice(unittest.TestCase):
+    def setUp(self):
+        # Set up the KeysightDevice instance for testing
+        self.daq = KeysightDevice('mock_device')
 
-    # Test that the device is connected
-    assert daq.device is not None
+    def test_configure_measurement(self):
+        # Test configuring an example measurement type
+        self.daq.connect()
+        self.daq.configure_measurement('example_measurement', 10, 'V', 'DC')
+        self.assertEqual(self.daq.query('QUERY_FOR_EXAMPLE_MEASUREMENT_SETTINGS'), '10 V DC')
+        self.daq.disconnect()
 
-    # Disconnect the device
-    daq.disconnect()
+        # Test configuring an unsupported measurement type
+        self.daq.connect()
+        with self.assertRaises(ValueError):
+            self.daq.configure_measurement('unsupported_measurement_type')
+        self.daq.disconnect()
 
-# Add more test functions to test other aspects of the data acquisition functionality.
+# This block of code is necessary for running the tests when the script is executed
+if __name__ == '__main__':
+    unittest.main()

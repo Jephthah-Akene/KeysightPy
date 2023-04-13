@@ -3,7 +3,7 @@
 
 KeysightPy is a Python library designed to simplify data acquisition with Keysight DAQ devices using PyVISA and Python. It provides an easy-to-use interface for communicating with and configuring Keysight Technologies data acquisition (DAQ) devices, acquiring data, and processing the acquired data. The library also offers simulation capabilities to help users familiarize themselves with Keysight DAQs and their functionalities before using physical hardware.
 
-For questions or feature requests, please contact Jephthah Akene at 0xtachi@gmail.com. As an independent researcher, I built this project purely for the joy of creating something both enjoyable and practical. If you love to tinker and build innovative control systems, feel free to email me!
+For questions or feature requests, please contact **Jephthah Akene** at 0xtachi@gmail.com. As an independent researcher, I built this project purely for the joy of creating something both enjoyable and practical. If you love to tinker and build innovative control systems, feel free to email me!
 
 ## Table of Contents
 - Installation
